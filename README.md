@@ -24,7 +24,7 @@ You cannot use **Reserved Words** as identifiers.
 ![Figure 1.02](Images/Fig1_02.png)  
 ## Comments  
 In addition to executable statements and declarations, Java allows a programmer to embed comments, which are annotations provided for human readers that are not processed by the Java compiler.  
-Java allows two kind of comments:  Inline comments and block comments.  
+Java allows two kinds of comments:  Inline comments and block comments.  
 You can run a program with comments by [clicking here](EX01_02/EX01_02.java) or navigating to the EX01_02 folder.  
 *Note:*  The program doesn't do anything because it ignores all of the comments!  
 
@@ -46,8 +46,8 @@ You can run a program that shows how to declare and initialize base types by [cl
 Every **object** is an instance of a **class**, which serves as the type of the object and as a blueprint, defining the data which the object stores and the methods for accessing and modifying that data.  
 
 The critical members of a class in Java are the following:
-- **Instance variables**, which are also called **fields**, represent the data associated with an object of a class.  Instance variables must have a type, which an either be a base type (such as int, float or double) or any class type.  
-- **Methods** in Java are blocks of code that can be called to perform actions.  Methods can accept parameters as arguments, and their behavior may depend on the object upon which they are invoked and the values of any parameters that are passed.  A method that returns information to the caller without changing any instance variables is know as an **accessor** method, while an **update** or **mutator** method is one that may change one or more instance variables when called.  
+- **Instance variables**, which are also called **fields**, represent the data associated with an object of a class.  Instance variables must have a type, which can either be a base type (such as int, float or double) or any class type.  
+- **Methods** in Java are blocks of code that can be called to perform actions.  Methods can accept parameters as arguments, and their behavior may depend on the object upon which they are invoked and the values of any parameters that are passed.  A method that returns information to the caller without changing any instance variables is known as an **accessor** method, while an **update** or **mutator** method is one that may change one or more instance variables when called.  
 
 This is an example of a class:  
 ![Figure 1.04](Images/Fig1_04.png)  
@@ -55,7 +55,7 @@ This is an example of a class:
 You can [click here](EX01_04/Counter.java) to see the code for this class or navigate to Counter.java in the EX01_04 folder.  
 
 This class includes one instance variable, named *count*, which will have a default value of zero, unless we initialize it.  
-The class includes to special methods known as constructors, one accessor method, and three update methods.  
+The class includes two special methods known as constructors, one accessor method, and three update methods.  
 
 ## Creating and Using Objects
 Classes are known as **reference types** in Java, and a variable of that type is known as a **reference variable**.  
@@ -66,7 +66,7 @@ A reference variable is capable of storing the location (i.e., memory address) o
 In Java, a new object is created by using the **new** operator followed by a call to a constructor for the desired class.  
 A **constructor** is a method that always shares the same name as its class.  The new operator returns a reference to the newly created instance;  the returned reference is typically assigned to a variable for future use.  
 
-In this example, a new Counter is constructed at line 4, with it's reference assigned to the variable c.  That relies on a form of the constructor, Counter (), that takes no arguments between the parentheses.  
+In this example, a new Counter is constructed at line 4, with its reference assigned to the variable c.  That relies on a form of the constructor, Counter (), that takes no arguments between the parentheses.  
 ![Figure 1.05](Images/Fig1_05.png)  
 
 You can [click here](EX01_04/CounterDemo.java) to see the code for this class or navigate to CounterDemo.java in the EX01_04 folder.  
