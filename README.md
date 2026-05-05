@@ -146,3 +146,42 @@ Java provides the plus-one increment (++) and decrement (--) operators.
 
 You can [click here](EX01_06/EX01_06.java) to see code demonstrating these operators or navigate to EX01_06.java in the EX01_06 folder.  
 
+### Logical Operators  
+Java supports the following operators for numerical values, wich result in Boolean values:  
+![Figure 1.10](Images/Fig1_10.png)  
+
+Boolean values also have the following operators:  
+![Figure 1.11](Images/Fig1_11.png)  
+
+The **and** and **or** operators **short circuit**, in that they do not evaluate the second operand if the result can be determined based on the first operand.  
+
+### Bitwise Operators  
+Java provides the following bitwise operators for integers and booleans:  
+![Figure 1.12](Images/Fig1_12.png)  
+
+### Operator Precedence  
+Operators in Java are given preferences, or precedence, that determine the order in which operations are performed when the absence of parentheses brings up evaluation ambiguities. For example, we need a way of deciding if the expression, “5+2*3,” has value 21 or 11 (Java says it is 11). We show the precedence of the operators in Java (which, incidentally, is the same as in C and C++)  
+
+![Figure 1.13](Images/Fig1_13.png)  
+
+## Casting  
+Casting is an operation that allows us to change the type of a value.  
+
+We can take a value of one type and cast it into an equivalent value of another type.  
+
+There are two types of casting: **Explicit** and **Implicit**
+
+### Explicit Casting
+Java supports an explicit casting syntax with the following form: (type) exp  
+Where "type" is the type we would like the expression "exp" to have.  
+This syntax may only be used to cast from one primitive to another primitive type, or from one reference type to another reference type.
+
+For example:  
+![Figure 1.14](Images/Fig1_14.png)  
+
+### Implicit Casting  
+There are cases where Java will perform an implicit cast based on the context of an expression.  
+You can perform a **widening cast** between primitive types (such as from an int to a double), without explicit use of the casting operator.  
+However, if attempting to do an implicit **narrowing cast**, a compiler error results as shown below:  
+
+![Figure 1.15](Images/Fig1_15.png)  
