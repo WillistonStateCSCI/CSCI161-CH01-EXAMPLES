@@ -1,5 +1,5 @@
 # Chapter 1 - Java Primer  
-Building data structures and algorithms requires that we communicate detailed instructions to a computer. An excellent way to perform such communication is using a high-level computer language, such as Java. In this chapter, we provide an overview of the Java programming language, and we continue this discussion in the next chapter, focusing on object-oriented design principles. We assume that readers are somewhat familiar with an existing high-level language, although not necessarily Java. This book does not provide a complete description of the Java language (there are numerous language references for that purpose), but it does introduce all aspects of the language that are used in code fragments later in this book.
+Building data structures and algorithms requires that we communicate detailed instructions to a computer. An excellent way to perform such communication is using a high-level computer language, such as Java. In this chapter, we provide an overview of the Java programming language, and we continue this discussion in the next chapter, focusing on object-oriented design principles. We assume that readers are somewhat familiar with an existing high-level language, although not necessarily Java.  
 
 
 ## The Java Compiler  
@@ -91,6 +91,8 @@ In any context for which an Integer is expected (for example, as a parameter), a
 This is an example with a demonstration of many such features:  
 ![Figure 1.07](Images/Fig1_07.png)  
 
-**Note:**  Some of the code in your book has been depreciated due to updates to Java.  When that happens, I will give you the original code AND and updated version.  
+**Note:**  Some of the code in your book has been depreciated due to updates to Java.  When that happens, I will give you the original code AND an updated version.  
 You can [click here](EX01_05/EX01_05.java) to see  **original** code for this class or navigate to EX01_05.java in the EX01_05 folder.  
 Then, you can [click here](EX01_05/EX01_05updated.java) to see  **updated** code for this class or navigate to EX01_05updated.java in the EX01_05 folder.  
+
+## Signatures  
