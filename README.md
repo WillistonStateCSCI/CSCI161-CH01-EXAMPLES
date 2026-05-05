@@ -142,3 +142,7 @@ Java provides the plus-one increment (++) and decrement (--) operators.
 - If such an operator is used in front of a variable reference, then 1 is added to (or subtracted from) the variable and its value is read into the expression.  
 - If it is used after a variable reference, then the value is first read and then the variable is incremented or decremented by 1.  
 
+![Figure 1.09](Images/Fig1_09.png)  
+
+You can [click here](EX01_06/EX01_06.java) to see code demonstrating these operators or navigate to EX01_06.java in the EX01_06 folder.  
+
