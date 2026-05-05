@@ -1,6 +1,5 @@
-# CSCI161-CH01-EXAMPLES
-Examples from Data Structures and Algorithms in Java 6th Edition.
-# Chapter 1 - Java Primer 
+# Chapter 1 - Java Primer  
+Building data structures and algorithms requires that we communicate detailed instructions to a computer. An excellent way to perform such communication is using a high-level computer language, such as Java. In this chapter, we provide an overview of the Java programming language, and we continue this discussion in the next chapter, focusing on object-oriented design principles. We assume that readers are somewhat familiar with an existing high-level language, although not necessarily Java. This book does not provide a complete description of the Java language (there are numerous language references for that purpose), but it does introduce all aspects of the language that are used in code fragments later in this book.
 ## The Java Compiler  
 Java is a compiled language.  
 Programs are compiled into byte-code executable files, which are executed through the Java Virtual Machine (JVM).  
@@ -40,3 +39,17 @@ In particular, all numeric types are initialized to zero, a boolean is initializ
 You can run a program that shows how to declare and initialize base types by [clicking here](EX01_03/EX01_03.java) or navigating to the EX01_03 folder.  
 *Note:*  The program doesn't output anything because the variables are only declared and initialized, but not used for anything else!  
 
+## Classes and Objects  
+Every **object** is an instance of a **class**, which serves as the type of the object and as a blueprint, defining the data which the object stores and the methods for accessing and modifying that data.  
+
+The critical members of a class in Java are the following:
+- **Instance variables**, which are also called **fields**, represent the data associated with an object of a class.  Instance variables must have a type, which an either be a base type (such as int, float or double) or any class type.  
+- **Methods** in Java are blocks of code that can be called to perform actions.  Methods can accept parameters as arguments, and their behavior may depend on the object upon which they are invoked and the values of any parameters that are passed.  A method that returns information to the caller without changing any instance variables is know as an **accessor** method, while an **update** or **mutator** method is one that may change one or more instance variables when called.  
+
+This is an example of a class:  
+![Figure 1.04](Images/Fig1_04.png)  
+
+You can [click here](EX01_04/Counter.java) to see the code for this class or navigate to the EX01_04 folder.  
+
+This class includes one instance variable, named *count*, which will have a default value of zero, unless we initialize it.  
+The class includes to special methods known as constructors, one accessor method, and three update methods.  
