@@ -1,7 +1,7 @@
 # Chapter 1 - Java Primer  
 Building data structures and algorithms requires that we communicate detailed instructions to a computer. An excellent way to perform such communication is using a high-level computer language, such as Java. In this chapter, we provide an overview of the Java programming language, and we continue this discussion in the next chapter, focusing on object-oriented design principles. We assume that readers are somewhat familiar with an existing high-level language, although not necessarily Java.  
 
-
+# Part One - Types, Classes and Operators
 ## The Java Compiler  
 Java is a compiled language.  
 Programs are compiled into byte-code executable files, which are executed through the Java Virtual Machine (JVM).  
@@ -185,3 +185,111 @@ You can perform a **widening cast** between primitive types (such as from an int
 However, if attempting to do an implicit **narrowing cast**, a compiler error results as shown below:  
 
 ![Figure 1.15](Images/Fig1_15.png)  
+
+# Part Two - I/O Methods and Control Flow  
+## If Statements  
+The syntax of a simple **if** statement is as follows:
+![Figure 1.16](Images/Fig1_16.png)  
+
+*booleanExpression* is a boolean expression and *trueBody* and *falseBody* are each either a single statement or a block of statements enclosed in braces **{** and**}**  
+
+## Compound If Statements  
+There is also a way to group a number of boolean tests, as follows:  
+![Figure 1.17](Images/Fig1_17.png)  
+
+## Switch Statements  
+Java provides for multiple-value control flow using the switch statement.  
+
+The switch statement evaluates an integer, string, or enum expression and causes control flow to jump to the code location labeled with the value of this expression.  
+
+If there is no matching label, then control flow jumps to the location labeled **default**.  
+
+This is the only explicit jump performed by the switch statement, however, so flow of contro "falls through" to the next case if the code for a case is not ended with a **break** statement.  
+
+For Example:  
+![Figure 1.18](Images/Fig1_18.png)  
+
+## Break and Continue  
+Java supports a **break** statement that immediately terminates a *while* or *for* loop when executed within its body.  
+
+Java also supports a **continue** statement that causes the current iteration of a loop body to stop, but with subsequent passes of the loop proceeding as expected.  
+
+## While Loops  
+The simplest kind of loop in Java is a **while** loop.  Such a loop tests that a certain condition is satisfied and will perform the body of the loop each time this condition is evaluated to be true.  
+
+The syntax is as follows:
+```
+while (booleanExpression){
+    loopBody
+}
+```
+
+## Do-While Loops  
+Java has another form of the while loop that allows the boolean condition to be checked at the end of each loop rather than befor each pass.  
+
+The syntax is as follows:  
+``` 
+do {
+    loopBody
+    }
+while (booleanExpression)
+```
+
+## For Loops  
+The traditional **for**-loop syntax consists of four sections:
+- an initialization  
+- a boolean condition  
+- an increment statement  
+- the body
+
+...although any of these sections can be empty.  
+
+The structure is as follows:  
+**for**(initialization; booleanCondition; increment){loopBody}
+
+Meaning:  
+![Figure 1.19](Images/Fig1_19.png) 
+
+## Example For Loops:  
+Compute the sum of an array of doubles:  
+![Figure 1.20](Images/Fig1_20.png) 
+
+Compute the maximum in an array of doubles:  
+![Figure 1.21](Images/Fig1_21.png) 
+
+You can [click here](EX01_07/EX01_07.java) or navigate to EX01_07.java in the EX01_07 folder to see both of these For Loops in action.  
+
+## For-Each Loops  
+Since looping through elements of a collection is such a common construct, Java provides a shorthand notation for such loops, called the **for-each** loop.  
+
+The syntax for such a loop is as follows:  
+for (elementType name : container){loopBody}  
+
+For Example:  
+![Figure 1.22](Images/Fig1_22.png)  
+
+When using a for-each loop, there is no explicit use of array indices.  The loop variable represents one particular element of the array.  
+
+You can [click here](EX01_08/EX01_08.java) or navigate to EX01_08.java in the EX01_08 folder to see this for-each loop.  
+
+## Simple Output  
+Java provides a built-in static object, called **System.out** that performs output to the standard output device with the following methods:  
+![Figure 1.23](Images/Fig1_23.png)  
+
+## Simple Input  
+There is also a special object, **System.in** for performing input from the Java console window.  
+
+A simple way of reading input with this object is to use it to create a **Scanner** object using the expression *new Scanner(System.in)*  
+
+For Example:  
+![Figure 1.24](Images/Fig1_24.png)  
+
+You can [click here](EX01_09/EX01_09.java) or navigate to EX01_09.java in the EX01_09 folder to run this code on your own.  
+
+## java.util.Scanner Methods  
+The Scanner class reads the input stream and divides it into tokens, which are strings of characters separated by delimiters.  
+![Figure 1.25](Images/Fig1_25.png)  
+
+# Part Three - A Sample Program
+The sample program is a CreditCard class and CCProgram utility file.  
+You can [click here](EX01_10/CCProgram.java) to go directly to the utility or navigate to CCProgram.java or CreditCard.java in the EX01_10 folder to view this code on your own.
