@@ -1,5 +1,7 @@
 # Chapter 1 - Java Primer  
 Building data structures and algorithms requires that we communicate detailed instructions to a computer. An excellent way to perform such communication is using a high-level computer language, such as Java. In this chapter, we provide an overview of the Java programming language, and we continue this discussion in the next chapter, focusing on object-oriented design principles. We assume that readers are somewhat familiar with an existing high-level language, although not necessarily Java. This book does not provide a complete description of the Java language (there are numerous language references for that purpose), but it does introduce all aspects of the language that are used in code fragments later in this book.
+
+
 ## The Java Compiler  
 Java is a compiled language.  
 Programs are compiled into byte-code executable files, which are executed through the Java Virtual Machine (JVM).  
@@ -7,6 +9,7 @@ Programs are compiled into byte-code executable files, which are executed throug
 
 A programmer defines a Java program in advance and saves that program in a text file known as source code.  
 For Java, source code is conventionally stored in a file named with the **.java** suffix (e.g., **demo.java**) and the byte-code file is stored in a file named with a **.class** suffix, which is produced by the Java compiler.  
+
 ## Components of a Java Program  
 ![Figure 1.01](Images/Fig1_01.png)  
 You can run this program by [clicking here](EX01_01/EX01_01.java) or navigating to the EX01_01 folder.  
@@ -53,3 +56,16 @@ You can [click here](EX01_04/Counter.java) to see the code for this class or nav
 
 This class includes one instance variable, named *count*, which will have a default value of zero, unless we initialize it.  
 The class includes to special methods known as constructors, one accessor method, and three update methods.  
+
+## Creating and Using Objects
+Classes are known as **reference types** in Java, and a variable of that type is known as a **reference variable**.  
+A reference variable is capable of storing the location (i.e., memory address) of an object from the declared class.  
+- So we might assign it to reference an existing instance or a newly constructed instance.  
+- A reference variable can also store a special value, **null**, that represents the lack of an object.  
+
+In Java, a new object is created by using the **new** operator followed by a call to a constructor for the desired class.  
+A **constructor** is a method that always shares the same name as its class.  The new operator returns a reference to the newly created instance;  the returned reference is typically assigned to a variable for future use.  
+
+In this example, a new Counter is constructed at line 4, with it's reference assigned to the variable c.  That relies on a form of the constructor, Counter (), that takes no arguments between the parentheses.  
+![Figure 1.05](Images/Fig1_05.png)  
+
