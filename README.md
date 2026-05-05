@@ -15,7 +15,7 @@ For Java, source code is conventionally stored in a file named with the **.java*
 You can run this program by [clicking here](EX01_01/EX01_01.java) or navigating to the EX01_01 folder.  
   
 In Java, executable statements are placed in functions, known as **methods**, that belong to class definitions.  
-The static method **main** is th efirst method to be executed when running a Java program.  
+The static method **main** is the first method to be executed when running a Java program.  
 Any set of statements between the braces **{** and **}** define a program block.  
 ## Identifiers  
 The name of a class, method or variable in Java is called an **identifier**, which can be any string of characters as long as it begins with a letter and consists of letters.  
@@ -96,3 +96,49 @@ You can [click here](EX01_05/EX01_05.java) to see  **original** code for this cl
 Then, you can [click here](EX01_05/EX01_05updated.java) to see  **updated** code for this class or navigate to EX01_05updated.java in the EX01_05 folder.  
 
 ## Signatures  
+If there are several methods with this same name defined for a class, then the Java runtime system uses the one that matches the actual number of parameters set as arguments, as well as their respective types.  
+A method's name combined with the number and types of its parameters is called a method's **signature**, for it takes all of these parts to determine the actual method to perform for a certain method call.  
+A reference variable *v* can be viewed as a "pointer" variable to some object *o*.  
+
+## Defining Classes  
+A **class definition** is a block of code, delimited by braces **{** and **}**, within which is included declarations of instance variables and methods that are the members of the class.  
+Immediately before the definition of a class, instance variable or method in Java, keywords known as modifiers can be placed to convey additional stipulations about that definition.  
+
+## Access Control Modifiers  
+- The **public** class modifier designates that all classes may access the defined aspect.  
+- The **protected** class modifier designates that access to the defined aspect is only granted to classes that are designated as subclasses of the given class through inheritance or in the same package.  
+- The **private** class modifier designates that access to a defined member of a class be granted only to code within that class.  
+- When a variable or method of a class is declared as **static**, it is associated with the class as a whole, rather than with each individual instance of that class.  
+
+## Parameters  
+A method's parameters are defined in a comma-separated list enclosed in parethesis after the name of the method.
+- A parameter consists of two parts, the parameter type and the parameter name.  
+- If a method has no parameters, then only an empty pair of parenthesis is used.
+
+All parameters in Java are **passed by value**, that is, any time we pass a parameter to a method, a copy of that parameter is made for use within the method body.  
+- So if we pass an int variable to a method, then that variable's integer value is copied.  
+- The method can change the copy but not the original.  
+- If we pass an obnect reference as a parameter to a method, then the reference is copied as well.  
+
+## The Keyword this  
+Within the body of a method in Java, the keyword **this** is automatically defined as a reference to th einstance upon which the method was invoked.  There are three common uses:  
+- To store the reference in a variable, or send it as a parameter to another method that expects an instance of that type as an argument.  
+- To differentiate between an instance variable and a local variable with the same name.  
+- To allow one constructor body to invoke another constructor body  
+  
+## Expressions and Operators  
+Existing values can be combined into expressions using special symbols and keywords known as operators.  
+
+The semantics of an operator depends on the type of its operands.  
+
+For example, when a and b are numbers, the syntax a + b indicates addition, while if a and b are strings, the operator + indicates concatenation.  
+### Arithmetic Operators  
+Java supports the following arithmetic operators:  
+![Figure 1.08](Images/Fig1_08.png)  
+If both operands have type int, then the result is an int;  if one or both operands have the type float, then the result is a float.  
+Integer division has its result truncated to the nearest whole number.    
+### Increment and Decrement Operators  
+Java provides the plus-one increment (++) and decrement (--) operators.  
+- If such an operator is used in front of a variable reference, then 1 is added to (or subtracted from) the variable and its value is read into the expression.  
+- If it is used after a variable reference, then the value is first read and then the variable is incremented or decremented by 1.  
+
