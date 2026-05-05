@@ -11,10 +11,12 @@ For Java, source code is conventionally stored in a file named with the **.java*
 ## Components of a Java Program  
 ![Figure 1.01](Images/Fig1_01.png)  
 You can run this program by [clicking here](Examples/EX01_01/EX01_01.java) or navigating to the EX01_01 folder.  
-In Java, executable statemtns are placed in functions, known as **methods**, that belong to class definitions.  
+  
+In Java, executable statements are placed in functions, known as **methods**, that belong to class definitions.  
 The static method **main** is th efirst method to be executed when running a Java program.  
 Any set of statements between the braces **{** and **}** define a program block.  
 ## Identifiers  
 The name of a class, method or variable in Java is called an **identifier**, which can be any string of characters as long as it begins with a letter and consists of letters.  
+  
 You cannot use **Reserved Words** as identifiers.  
 ![Figure 1.02](Images/Fig1_02.png)  
