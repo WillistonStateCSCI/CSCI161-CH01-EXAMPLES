@@ -52,7 +52,7 @@ The critical members of a class in Java are the following:
 This is an example of a class:  
 ![Figure 1.04](Images/Fig1_04.png)  
 
-You can [click here](EX01_04/Counter.java) to see the code for this class or navigate to the EX01_04 folder.  
+You can [click here](EX01_04/Counter.java) to see the code for this class or navigate to Counter.java in the EX01_04 folder.  
 
 This class includes one instance variable, named *count*, which will have a default value of zero, unless we initialize it.  
 The class includes to special methods known as constructors, one accessor method, and three update methods.  
@@ -69,3 +69,28 @@ A **constructor** is a method that always shares the same name as its class.  Th
 In this example, a new Counter is constructed at line 4, with it's reference assigned to the variable c.  That relies on a form of the constructor, Counter (), that takes no arguments between the parentheses.  
 ![Figure 1.05](Images/Fig1_05.png)  
 
+You can [click here](EX01_04/CounterDemo.java) to see the code for this class or navigate to CounterDemo.java in the EX01_04 folder.  
+
+## The Dot Operator  
+One of the many primary uses of an object reference variable is to access the members of the class for this object, an instance of its class.  
+This access is performed with the dot (".") operator.  
+We call a method associated with an object by using the reference variable name, following that by the dot operator, and then the method name and its parameters.  
+
+## Wrapper Types  
+There are many data structures and algorithms in Java's libraries that are specifically designed so that they only work with object types (not primitives).  
+To get around this obstacle, Java defines a **wrapper** class for each base type.
+- Java provides additional support for implicitly converting between base types and their wrapper types through a process known as automatic **boxing** and **unboxing**.
+
+This is a table of Example Wrapper Types  
+![Figure 1.06](Images/Fig1_06.png)  
+
+Java provides additional support for implicitly converting between base types and their wrapper types through a process known as automatic boxing and unboxing.  
+
+In any context for which an Integer is expected (for example, as a parameter), an int value k can be expressed, in which case Java automatically boxes the int, with an implicit call to new Integer(k). In reverse, in any context for which an int is expected, an Integer value v can be given in which case Java automatically unboxes it with an implicit call to v.intValue( ). Similar conversions are made with the other base-type wrappers.  
+
+This is an example with a demonstration of many such features:  
+![Figure 1.07](Images/Fig1_07.png)  
+
+**Note:**  Some of the code in your book has been depreciated due to updates to Java.  When that happens, I will give you the original code AND and updated version.  
+You can [click here](EX01_05/EX01_05.java) to see  **original** code for this class or navigate to EX01_05.java in the EX01_05 folder.  
+Then, you can [click here](EX01_05/EX01_05updated.java) to see  **updated** code for this class or navigate to EX01_05updated.java in the EX01_05 folder.  
