@@ -5,7 +5,7 @@ Building data structures and algorithms requires that we communicate detailed in
 ## The Java Compiler  
 Java is a compiled language.  
 Programs are compiled into byte-code executable files, which are executed through the Java Virtual Machine (JVM).  
-- The JVM reads each instruction and executes that instruction.  
+The JVM reads each instruction and executes that instruction.  
 
 A programmer defines a Java program in advance and saves that program in a text file known as source code.  
 For Java, source code is conventionally stored in a file named with the **.java** suffix (e.g., **demo.java**) and the byte-code file is stored in a file named with a **.class** suffix, which is produced by the Java compiler.  
@@ -60,7 +60,7 @@ The class includes two special methods known as constructors, one accessor metho
 ## Creating and Using Objects
 Classes are known as **reference types** in Java, and a variable of that type is known as a **reference variable**.  
 A reference variable is capable of storing the location (i.e., memory address) of an object from the declared class.  
-- So we might assign it to reference an existing instance or a newly constructed instance.  
+So we might assign it to reference an existing instance or a newly constructed instance.  
 - A reference variable can also store a special value, **null**, that represents the lack of an object.  
 
 In Java, a new object is created by using the **new** operator followed by a call to a constructor for the desired class.  
